@@ -43,6 +43,6 @@ const deleteExpiredFiles = async () => {
 };
 
 // Set an interval to run this function every 30 seconds
-setInterval(deleteExpiredFiles, 30000);
+setInterval(deleteExpiredFiles, 10000);
 
 console.log("Auto-delete script is running...");

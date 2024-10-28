@@ -1,5 +1,6 @@
 const express = require("express");
 const multer = require("multer");
+const cors = require("cors");
 const {
   BlobServiceClient,
   generateBlobSASQueryParameters,
@@ -9,6 +10,7 @@ const {
 require("dotenv").config();
 
 const app = express();
+app.use(cors());
 const upload = multer(); // Using multer for file handling
 
 // Azure Blob Storage Setup
